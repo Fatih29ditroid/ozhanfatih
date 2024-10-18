@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anket - Fatih Özhan Blok Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Fatih Özhan Blok Sayfası</h1>
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="projelerim.html">Projelerim</a>
+        <a href="iletisim.html">İletişim</a>
+        <a href="anket.html">Anket</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Anket</h2>
+    <form>
+        <form id="surveyForm" onsubmit="return showThankYouMessage();">
+            <label for="yorum">Bloğumu geliştirmek için fikirlerinizi ve önerilerinizi yazabilirsiniz?</label><br>
+            <textarea id="yorum" name="yorum" rows="4" cols="50" placeholder="Yorumunuzu buraya yazın..."></textarea><br><br>
+            <p>Blogumu nasıl buldunuz? (Birden fazla seçeneği işaretleyebilirsiniz):</p>
+            <label><input type="checkbox" name="feedback" value="Yararlı"> Yararlı</label><br>
+            <label><input type="checkbox" name="feedback" value="Eğlenceli"> Eğlenceli</label><br>
+            <label><input type="checkbox" name="feedback" value="Bilgilendirici"> Bilgilendirici</label><br>
+            <label><input type="checkbox" name="feedback" value="Sıradan"> Sıradan</label><br>
+            <label><input type="checkbox" name="feedback" value="Diğer"> Diğer</label><br>
+            <br>
+            <input type="submit" value="Gönder">
+        </form>
+        <p id="thankYouMessage" style="display: none;">Teşekkürler! Geri bildiriminiz alındı.</p>
+    </form>
+</section>
+
+</body>
+</html>
